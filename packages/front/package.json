@@ -1,0 +1,9 @@
+{
+  "name": "front",
+  "version": "0.0.0-development",
+  "scripts": {
+    "test": "echo front-test!"
+  },
+  "main": "index.js",
+  "license": "UNLICENSED"
+}

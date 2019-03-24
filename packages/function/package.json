@@ -1,0 +1,30 @@
+{
+  "name": "function",
+  "version": "0.0.0-development",
+  "main": "index.js",
+  "scripts": {
+    "start": "sam local start-api -f serverless.yaml --parameter-overrides ",
+    "test": "echo function-test!",
+    "build": "npx run-s build:**",
+    "build:api": "npx run-s build:api:*",
+    "build:api:hello": "parcel build --target node --bundle-node-modules src/api/hello-world/index.ts --out-dir .dist/api/hello-world --out-file index",
+    "deploy:api:hello": "",
+    "publish:api:hello:world": "npx run-p publish:api:hello:*",
+    "publish:api:hello:world": "npx ts-node ./scripts/publish helloWorld"
+  },
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.23",
+    "@types/aws-sdk": "^2.7.0",
+    "@types/node": "^11.11.6",
+    "aws-sdk": "^2.427.0",
+    "common": "0.0.0-development",
+    "parcel-bundler": "^1.12.3",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.3.4000"
+  },
+  "license": "UNLICENSED"
+}

@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "scripts": {
+    "create-env": "npx samx create-env $ENV",
+    "test-p": "npx run-p test:*",
+    "test": "yarn workspaces run test",
+    "test:function": "yarn workspace function run test",
+    "test:front": "yarn workspace front run test",
+    "test:script": "yarn workspace script run test",
+    "full:build": "echo 1#yarn workspaces run build",
+    "full:deploy": "echo 2",
+    "full:publish": "echo 3",
+    "s:hyfa": "echo \"$(date)\"",
+    "s:hoge": "echo hoge",
+    "a:b": "npx run-s a:b:*",
+    "a:b:hoge": "echo a/b/hoge",
+    "a:b:hige": "echo a/b/hioge"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "npm-run-all": "^4.1.5"
+  }
+}
