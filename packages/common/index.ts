@@ -6,7 +6,7 @@ const base = {
 export const setting = {
     ...base,
     initial: {
-      s3Bucket: `${base.service}-${base.env}`,
+      s3Bucket: `${base.service}`,
       functions3Key: 'function',
       template3Key: 'template'
     }

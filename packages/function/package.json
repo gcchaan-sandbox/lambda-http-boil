@@ -7,9 +7,12 @@
     "test": "echo function-test!",
     "build": "npx run-s build:**",
     "build:api": "npx run-s build:api:*",
-    "build:api:hello": "parcel build --target node --bundle-node-modules src/api/hello-world/index.ts --out-dir .dist/api/hello-world --out-file index",
-    "deploy:api:hello": "",
-    "publish:api:hello:world": "npx run-p publish:api:hello:*",
+    "build:api:hello": "npx run-s build:api:hello:*",
+    "build:api:hello:world": "npx ts-node ./scripts/build src/api/hello/world.ts",
+    "build:api:hello:goodby": "npx ts-node ./scripts/build src/api/hello/goodby.ts",
+    "deploy:api:hello": "npx run-s deploy:hello:*",
+    "deploy:api:hello:world": "npx ts-node ./scripts/deploy src/api/hello/world.ts",
+    "deploy:api:hello:goodby": "npx ts-node ./scripts/deploy src/api/hello/goodby.ts",
     "publish:api:hello:world": "npx ts-node ./scripts/publish helloWorld"
   },
   "dependencies": {
@@ -20,6 +23,7 @@
     "@types/aws-lambda": "^8.10.23",
     "@types/aws-sdk": "^2.7.0",
     "@types/node": "^11.11.6",
+    "@types/parcel-bundler": "^1.10.2",
     "aws-sdk": "^2.427.0",
     "common": "0.0.0-development",
     "parcel-bundler": "^1.12.3",

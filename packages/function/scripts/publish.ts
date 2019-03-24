@@ -1,4 +1,4 @@
-import { Lambda } from 'aws-sdk'
+import Lambda = require('aws-sdk/clients/lambda')
 import { setting } from './_config'
 
 const functionName = process.argv[2]

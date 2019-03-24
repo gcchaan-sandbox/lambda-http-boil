@@ -774,15 +774,35 @@
   dependencies:
     axios "*"
 
-"@types/node@^11.11.6":
+"@types/express-serve-static-core@*":
+  version "4.16.2"
+  resolved "https://registry.yarnpkg.com/@types/express-serve-static-core/-/express-serve-static-core-4.16.2.tgz#5ee8a22e602005be6767df6b2cba9879df3f75aa"
+  integrity sha512-qgc8tjnDrc789rAQed8NoiFLV5VGcItA4yWNFphqGU0RcuuQngD00g3LHhWIK3HQ2XeDgVCmlNPDlqi3fWBHnQ==
+  dependencies:
+    "@types/node" "*"
+    "@types/range-parser" "*"
+
+"@types/node@*", "@types/node@^11.11.6":
   version "11.11.6"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-11.11.6.tgz#df929d1bb2eee5afdda598a41930fe50b43eaa6a"
   integrity sha512-Exw4yUWMBXM3X+8oqzJNRqZSwUAaS4+7NdvHqQuFi/d+synz++xmX3QIf+BFqneW8N31R8Ky+sikfZUXq07ggQ==
+
+"@types/parcel-bundler@^1.10.2":
+  version "1.10.2"
+  resolved "https://registry.yarnpkg.com/@types/parcel-bundler/-/parcel-bundler-1.10.2.tgz#a6c154bd7fd41e6bad72810ba19432496d090781"
+  integrity sha512-+/kaBRhMAxCENFJSuFv/tGMIhSCIm+7tPh2O4JiRc/d9bwIdzt4H3Pv1qrxwX0eP5leGBhzk0gh/6HN99k1UUg==
+  dependencies:
+    "@types/express-serve-static-core" "*"
 
 "@types/q@^1.5.1":
   version "1.5.2"
   resolved "https://registry.yarnpkg.com/@types/q/-/q-1.5.2.tgz#690a1475b84f2a884fd07cd797c00f5f31356ea8"
   integrity sha512-ce5d3q03Ex0sy4R14722Rmt6MT07Ua+k4FwDfdcToYJcMKNtRVQvJ6JCAPdAmAnbRb6CsX6aYb9m96NGod9uTw==
+
+"@types/range-parser@*":
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/@types/range-parser/-/range-parser-1.2.3.tgz#7ee330ba7caafb98090bece86a5ee44115904c2c"
+  integrity sha512-ewFXqrQHlFsgc09MK5jP5iR7vumV/BYayNC6PgJO2LPe8vrnNFyjQjSppfEngITi0qvfKtzFvgKymGheFM9UOA==
 
 abab@^2.0.0:
   version "2.0.0"

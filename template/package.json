@@ -1,0 +1,14 @@
+{
+  "name": "template",
+  "version": "0.0.0-development",
+  "main": "index.js",
+  "scripts": {
+    "create-env": "npx ts-node ./scripts/initialize.ts",
+    "deploy": "aws cloudformation deploy --template-file ./packaged.yaml --stack-name gcchaan-sam2  --capabilities CAPABILITY_IAM"
+  },
+  "devDependencies": {
+    "common": "0.0.0-development",
+    "ts-node": "^8.0.3"
+  },
+  "license": "UNLICENSED"
+}

@@ -17,7 +17,8 @@
     "a:b:hige": "echo a/b/hioge"
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "template"
   ],
   "dependencies": {
     "npm-run-all": "^4.1.5"
